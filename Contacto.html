@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contactos</title>
+	<link rel="stylesheet" href="Css/style.css">
+	<link rel="stylesheet" href="Css/style_contacto.css">
+	 <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+	 
+</head>
+<body>
+		<video id="mivideo" autoplay="autoplay" loop="none" muted="muted">
+                <source src="Img/Videos/1.mp4" type="video/ogg"></source>
+              </video>
+	<header>
+        <div class="menu">
+            <div class="contenedor">
+                <div class="logo"><a href="Index.html" title="HOME"><img src="Img/logo2.png"</a></div>
+                <nav>
+                    <ul>
+                        <li><a href="Galeria.html">Galeria.</a></li>
+                        <li><a href="#">¿A donde ir?</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                     </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="text">
+    	<h1>CONTACTO</h1>
+    	<p>No dude en ponerse en contacto con nostros si tiene alguna duda, tambien nos puede enviar sus sugerencias, nos encantaría saber su opinión</p>
+    </div>
+	<section id="formulario">
+		<p id="Titulo2">Bienvenidos</p>
+		
+		<form action="php/Enviar_Correo.php" method="post">
+			<input type="text" id="nombre" name="nombre" placeholder="Nombre">
+			<input type="text" id="Apellido" name="Apellido" placeholder="Apellido">
+			<input type="mail" id="mail" name="mail" placeholder="Correo electronico">
+			<textarea name="Mensaje" placeholder="Mensaje"></textarea>
+			<input type="submit"  value="enviar">
+			
+		</form>
+		</section>
+
+	
+		
+	</div>
+</body>
+</html>

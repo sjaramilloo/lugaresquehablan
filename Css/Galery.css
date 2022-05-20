@@ -1,0 +1,172 @@
+#particles-js{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+
+/* font-family design  */
+header #title, header h1  {
+	font-family: 'Merienda', cursive;
+	text-align: center;
+	padding: 20px;
+}
+
+/* size of the main header image */
+#img-div #image {
+	width: 100%;
+	height: 300px;
+
+}
+
+/* text under main image */
+#img-div #img-caption {
+	color: #136F63;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+header h1 {
+	padding: 30px;
+	font-size: 40px;
+
+}
+
+#tribute-info {
+	padding-left: 140px;
+	padding-right: 140px;
+}
+
+/* paragraph positioning */
+p {
+	column-count: 2;
+	column-gap: 40px;
+    font-size: 20px;
+    color: #584327;
+    line-height: 1.5em;
+}
+
+/* main section */
+section h2 {
+	color: black;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Merienda', cursive;
+	padding: 15px;
+
+}
+
+#galery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* gallery using Flax box */
+.container {
+    position: relative;
+ }
+
+.box {
+	width: 400px;
+	height: 300px;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid #160F12;
+	transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  
+}
+
+/* hover effect on pictures */
+.box:hover {
+	opacity: 0.6;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 16px 32px;
+
+}
+
+
+a {
+	text-decoration: none;
+	color: yellow;
+}
+
+a:hover {
+	color: purple;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1204px) {
+
+#img-div #image {
+	width: 100%;
+	height: 350px;
+	
+}
+  
+#tribute-info {
+	padding: 0 18px;
+	
+}
+
+ p {
+	font-size: 18px;
+}
+ 
+  #footnav ul {
+    display: block;
+    padding: 5px 5px;
+    font-size: 1em;
+  }
+
+}
+
+
+@media screen and (max-width: 740px) {
+  
+
+  #img-div #image {
+	width: 100%;
+	height: 250px;
+	
+}
+  
+#tribute-info {
+	padding: 0 10px;
+	
+}
+
+ p {
+	font-size: 12px;
+}
+ 
+  
+  #footnav ul {
+    width: 100%;
+    display: block;
+    padding: 5px 5px;
+    font-size: 0.8em;
+  }
+
+ 
